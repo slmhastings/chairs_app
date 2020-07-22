@@ -1,5 +1,6 @@
 class ChairsController < ApplicationController
   def index
-    render 
+    @chairs = Chair.all
+    render "index.html.erb"
   end
 end
